@@ -1,5 +1,5 @@
 -- Получение перелома от падение 
-hook.Add('EntityTakeDamage', 'perelom', function(target, dmginfo)
+hook.Add('PlayerTakeDamage', 'perelom', function(target, dmginfo)
     if (target:IsPlayer() and dmginfo:IsFallDamage()) then
             dmginfo:SetDamage(15)
             target:SetRunSpeed(65)
