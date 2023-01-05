@@ -10,10 +10,4 @@ hook.Add('EntityTakeDamage', 'perelom', function(target, dmginfo)
             target:SetWalkSpeed(65)
             target:SetJumpPower(65)
             target:ChatPrint('Вы Получили Перелом')
-            return
-        end
-        -- local inflictor = dmginfo:GetInflictor()
-        -- if IsValid(inflictor) and weap[inflictor:GetClass()] then end
-    end
-end)
-
+end
